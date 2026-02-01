@@ -52,7 +52,6 @@ footer {
   padding: 10px;
 }
 
-/* Responsive layout – 2 columns on desktop */
 @media (min-width: 768px) {
   main {
     flex-direction: row;
