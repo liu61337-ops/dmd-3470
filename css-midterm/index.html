@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Forces: Container Queries</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 固定控制面板 -->
+  <aside class="control-panel">
+    <h2>Control Panel</h2>
+    <div class="resize-info">
+      Container Width: <span id="containerWidth">0px</span>
+    </div>
+    <label>
+      Theme:
+      <select id="themeSelect">
+        <option value="default">Default</option>
+        <option value="dark">Dark</option>
+        <option value="soft">Soft UI</option>
+      </select>
+    </label>
+  </aside>
+
+  <!-- 主內容區 -->
+  <main class="main-content">
+
+    <!-- Section 1: Introduction -->
+    <section class="section intro">
+      <h1>Invisible Forces of CSS</h1>
+      <p>Discover how Container Queries make components self-aware.</p>
+    </section>
+
+    <!-- Section 2: Living Card Demo -->
+    <section class="section demo-card">
+      <h2>The Self-Aware Card</h2>
+      <p>Resize the container to see the card adapt.</p>
+      <div class="container-resizer">
+        <div class="card-container">
+          <article class="product-card">
+            <img src="placeholder.jpg" alt="Demo Image">
+            <div class="card-content">
+              <h3>Container Queries</h3>
+              <p class="description">
+                This card changes layout based on its container.
+              </p>
+              <button>Learn More</button>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="size-indicator">
+        Current width: <span id="sizeValue">0px</span>
+      </div>
+    </section>
+
+    <!-- Section 3: Dashboard Widgets Demo -->
+    <section class="section demo-widgets">
+      <h2>Dashboard Widgets</h2>
+      <p>Multiple components adapt independently in different container sizes.</p>
+      <div class="widgets-container">
+        <div class="widget">Widget 1</div>
+        <div class="widget">Widget 2</div>
+        <div class="widget">Widget 3</div>
+      </div>
+    </section>
+
+    <!-- Section 4: Sidebar & Layout Demo -->
+    <section class="section demo-layout">
+      <h2>Sidebar & Layout</h2>
+      <p>Even complex layout modules respond to their own container.</p>
+      <div class="layout-container">
+        <aside class="sidebar">Sidebar</aside>
+        <div class="main-area">
+          <p>Main content adapts here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Summary & Resources -->
+    <section class="section summary">
+      <h2>Summary</h2>
+      <p>Container Queries allow components to be self-aware, enabling smarter, more flexible UI design.</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Container_Queries">MDN: Container Queries</a></li>
+        <li><a href="https://caniuse.com/css-container-queries">Can I Use: Container Queries</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

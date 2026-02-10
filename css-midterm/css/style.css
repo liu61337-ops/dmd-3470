@@ -1,0 +1,104 @@
+/* ---------------------------------------------
+  1. 全局樣式
+--------------------------------------------- */
+* { box-sizing: border-box; }
+body { font-family: sans-serif; margin:0; padding:0; }
+h1,h2,h3 { margin:0; }
+.section { padding: 60px 20px; }
+
+/* ---------------------------------------------
+  2. 控制面板
+--------------------------------------------- */
+.control-panel {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ---------------------------------------------
+  3. 主內容區
+--------------------------------------------- */
+.main-content {
+  margin-left: 240px; /* leave space for control panel */
+}
+
+/* ---------------------------------------------
+  4. Demo 1: Card Container
+--------------------------------------------- */
+.card-container {
+  container-type: inline-size;
+  resize: horizontal;
+  overflow: auto;
+  max-width: 900px;
+  border: 2px dashed #999;
+  padding: 20px;
+}
+
+.product-card {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Container Queries */
+@container (max-width: 350px) { /* Small */
+  .product-card { grid-template-columns: 1fr; }
+  .description { font-size: 14px; }
+}
+
+@container (min-width: 351px) and (max-width: 650px) { /* Medium */
+  .product-card { grid-template-columns: 1fr 1fr; }
+  .description { font-size: 16px; }
+}
+
+@container (min-width: 651px) { /* Large */
+  .product-card { grid-template-columns: 2fr 3fr; }
+  .description { font-size: 18px; }
+}
+
+/* ---------------------------------------------
+  5. Demo 2 & 3 Widgets / Layouts
+--------------------------------------------- */
+.widgets-container {
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.widget {
+  border: 1px solid #aaa;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.layout-container {
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+.sidebar {
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.main-area {
+  background: #fafafa;
+  padding: 20px;
+}
+
+/* Container Queries 可以針對小螢幕自動折疊 sidebar */
+@container (max-width: 500px) {
+  .layout-container { grid-template-columns: 1fr; }
+  .sidebar { order: -1; }
+}
