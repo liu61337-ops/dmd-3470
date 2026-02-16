@@ -1,0 +1,133 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+}
+
+h2, h3, h5 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+.hero {
+    background:#091d36;
+    color: rgb(255, 254, 254);
+    padding: 185px 0 150px 200px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero span {
+    color: #e4002b;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.btn-1 {
+    background-color: #E4002B;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 3rm;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-2 {
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 3rm;
+    border: 1px solid white;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #1f3c5f;
+}
+
+
+.intro {
+    padding: 80px 0 40px 0;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section {
+    background-color:white;
+    padding: 60px 0;
+}
+
+.card-custom {
+    background-color: #f2f4f7;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-custom h5 {
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #0c2340; 
+}
+
+.card-custom p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+.stats {
+    background-color: #e4002b;
+    color: white;
+    padding: 40px 0;
+}
+
+.stats h2 {
+    font-size: 2.5rem;
+}
+
+
+.cta {
+    background-color: #0c2340;
+    color: white;
+    padding: 80px 0;
+}
+
+.cta-buttons a {
+    background-color: white;
+    color: #091d36;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0px 10px;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #1e2033;
+    color: rgb(207, 207, 207);
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
