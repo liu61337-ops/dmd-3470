@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.67/build/spline-viewer.js"></script>
 </head>
+
 <body>
   <div class="page">
 
@@ -25,17 +27,17 @@
 
                 <h1 class="title">Interactive <span>Logo</span> Space</h1>
 
-<p class="subtitle">
-  This section introduces CSS 3D transforms through an interactive card layout.
-  I used perspective, rotateX, rotateY, translateZ, and preserve-3d to create
-  depth, layered spacing, and a more immersive visual experience.
-</p>
+                <p class="subtitle">
+                  This section introduces CSS 3D transforms through an interactive card layout.
+                  I used perspective, rotateX, rotateY, translateZ, and preserve-3d to create
+                  depth and layered spacing to showcase my 3D logo.
+                </p>
                 <div class="glow-ring"></div>
 
                 <div class="mini-panel">
-  Move mouse to tilt
-  <div class="hint">Click the card to flip and see how this section was built.</div>
-</div>
+                  Move mouse to tilt
+                  <div class="hint">Click the card to flip and see how this section was built.</div>
+                </div>
 
                 <div class="logo-wrap" id="logoArea">
                   <spline-viewer url="https://prod.spline.design/vkwHbPn6iZR3v3ST/scene.splinecode"></spline-viewer>
@@ -43,379 +45,375 @@
               </div>
             </div>
 
-           <div class="flip-face flip-back">
-  <div class="back-content">
-    <span class="back-badge"></span>
+            <div class="flip-face flip-back">
+              <div class="back-content">
+                <span class="back-badge"></span>
 
-    <h2 class="back-title">How I built this section</h2>
+                <h2 class="back-title">How I built this section</h2>
 
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>Perspective</h3>
-        <p>
-          I placed perspective on the outer container so the card would feel like
-          it exists in real space. This makes rotateX() and rotateY() look more
-          realistic because the browser renders the movement with visible depth.
-        </p>
-      </div>
+                <div class="info-grid">
+                  <div class="info-card">
+                    <h3>Perspective</h3>
+                    <p>
+                      I placed perspective on the outer container so the card would feel like
+                      it exists in real space. This makes rotateX() and rotateY() look more
+                      realistic because the browser renders the movement with visible depth.
+                    </p>
+                  </div>
 
-      <div class="info-card">
-        <h3>Preserve-3D</h3>
-        <p>
-          I used transform-style: preserve-3d so the child elements inside the
-          card would stay in 3D space instead of being flattened. This is what
-          allows the text, panel, and logo area to feel layered instead of flat.
-        </p>
-      </div>
+                  <div class="info-card">
+                    <h3>Preserve-3D</h3>
+                    <p>
+                      I used transform-style: preserve-3d so the child elements inside the
+                      card would stay in 3D space instead of being flattened. This is what
+                      allows the text, panel, and logo area to feel layered instead of flat.
+                    </p>
+                  </div>
 
-      <div class="info-card">
-        <h3>TranslateZ Layers</h3>
-        <p>
-          I used translateZ() to push some layers backward and bring other
-          elements forward. This helped me build a stacked card effect and made
-          the design feel more dimensional.
-        </p>
-      </div>
+                  <div class="info-card">
+                    <h3>TranslateZ Layers</h3>
+                    <p>
+                      I used translateZ() to push some layers backward and bring other
+                      elements forward. This helped me build a stacked card effect and made
+                      the design feel more dimensional.
+                    </p>
+                  </div>
 
-      <div class="info-card">
-        <h3>Interaction</h3>
-        <p>
-          I added mouse-based tilt with JavaScript by tracking the cursor
-          position and updating rotateX() and rotateY(). I also added a click
-          interaction so the card flips and reveals an explanation on the back.
-        </p>
-      </div>
-    </div>
-
-    <p class="back-note">
-      The Spline logo is used as the main visual element, but the depth,
-      structure, and interaction of this section are created with CSS 3D
-      transforms and a small amount of JavaScript.
-    </p>
-  </div>
-</div>
+                  <div class="info-card">
+                    <h3>Interaction</h3>
+                    <p>
+                      I added mouse-based tilt with JavaScript by tracking the cursor
+                      position and updating rotateX() and rotateY(). I also added a click
+                      interaction so the card flips and reveals an explanation on the back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="about-section">
-  <div class="about-wrapper">
-    <span class="section-tag">ABOUT</span>
-    <h2>What are CSS 3D Transforms?</h2>
-    <p>
-      CSS 3D transforms are a way to move and rotate HTML elements in
-      three-dimensional space. Instead of only working on the x-axis and y-axis,
-      developers can also create depth on the z-axis. This makes it possible to
-      build effects such as flipping cards, rotating cubes, layered interfaces,
-      and more immersive layouts directly in the browser.
-    </p>
-    <p>
-      This topic is important because it shows how CSS can do more than simple
-      styling. It can also control spatial depth, motion, and interaction.
-      CSS 3D transforms are useful for creative websites, product showcases,
-      experimental interfaces, and interactive landing pages.
-    </p>
-  </div>
-</section>
-
-    <section class="cube-section">
-     <h2>Live CSS 3D Demonstration</h2>
-<p class="cube-subtitle">
-  This scene is a live example of how CSS 3D transforms can be used to build a
-  cube entirely from HTML and CSS. The animation, floor plane, bouncing ball,
-  and shadow help show how depth and motion can work together in a browser.
-</p>
-
-<div class="cube-scene" id="cubeScene">
-  <div class="floor"></div>
-
-  <div class="cube" id="mainCube">
-    <div class="face front"></div>
-    <div class="face back"></div>
-    <div class="face left"></div>
-    <div class="face right"></div>
-    <div class="face top"></div>
-    <div class="face bottom"></div>
-  </div>
-
-  <div class="ball" id="ball"></div>
-  <div class="shadow" id="ballShadow"></div>
-</div>
+      <div class="about-wrapper">
+        <span class="section-tag">ABOUT</span>
+        <h2>What are CSS 3D Transforms?</h2>
+        <p>
+          CSS 3D transforms are a way to move and rotate HTML elements in
+          three-dimensional space. Instead of only working on the x-axis and y-axis,
+          developers can also create depth on the z-axis. This makes it possible to
+          build effects such as flipping cards, rotating cubes, layered interfaces,
+          and more immersive layouts directly in the browser.
+        </p>
+        <p>
+          This topic is important because it shows how CSS can do more than simple
+          styling. It can also control spatial depth, motion, and interaction.
+          CSS 3D transforms are useful for creative websites, product showcases,
+          experimental interfaces, and interactive landing pages.
+        </p>
+      </div>
     </section>
 
- <section class="process-section">
-  <div class="process-wrapper">
+    <section class="cube-section">
+      <h2>Live CSS 3D Demonstration</h2>
+      <p class="cube-subtitle">
+        This scene is a live example of how CSS 3D transforms can be used to build a
+        cube entirely from HTML and CSS. The animation, floor plane, bouncing ball,
+        and shadow help show how depth and motion can work together in a browser.
+      </p>
 
-    <div class="process-intro">
-      <span class="process-tag">DESIGN PROCESS</span>
-      <h2>How I Built the Cube</h2>
-      <p class="process-text">
-  To build the cube, I started by thinking of it as six separate square faces
-  instead of one object. Each face was created with a div element, then rotated
-  and positioned in 3D space using CSS transforms. After the cube structure was
-  complete, I added animation, a bouncing ball, a shadow, and a floor to make
-  the scene feel more complete and easier to understand visually.
-</p>
-    </div>
+      <div class="cube-scene" id="cubeScene">
+        <div class="floor"></div>
 
-    <div class="process-layout">
-<div class="process-steps">
-  <div class="step-card">
-    <div class="step-number">01</div>
-    <h3>Build Six Faces</h3>
-    <p>
-      I created six div elements to represent the front, back, left, right, top,
-      and bottom of the cube. At this stage, each part was still just a flat square.
-    </p>
-  </div>
+        <div class="cube" id="mainCube">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+          <div class="face bottom"></div>
+        </div>
 
-  <div class="step-card">
-    <div class="step-number">02</div>
-    <h3>Position Each Face</h3>
-    <p>
-      I used translateZ(), rotateX(), and rotateY() to move each face into the
-      correct position. Once all six faces were placed correctly, they visually
-      formed a complete cube.
-    </p>
-  </div>
+        <div class="ball" id="ball"></div>
+        <div class="shadow" id="ballShadow"></div>
+      </div>
+    </section>
 
-  <div class="step-card">
-    <div class="step-number">03</div>
-    <h3>Add Depth</h3>
-    <p>
-      I added perspective to the parent container and used preserve-3d on the
-      cube so the browser would keep all of the faces in 3D space instead of
-      flattening them.
-    </p>
-  </div>
+    <section class="process-section">
+      <div class="process-wrapper">
 
-  <div class="step-card">
-    <div class="step-number">04</div>
-    <h3>Animate the Scene</h3>
-    <p>
-      After the cube was built, I added rotation, a bouncing ball, and a shadow.
-      These details made the scene feel more dynamic and helped demonstrate how
-      CSS can create motion as well as structure.
-    </p>
-  </div>
-</div>
+        <div class="process-intro">
+          <span class="process-tag">DESIGN PROCESS</span>
+          <h2>How I Built the Cube</h2>
+          <p class="process-text">
+            To build the cube, I started by thinking of it as six separate square faces
+            instead of one object. Each face was created with a div element, then rotated
+            and positioned in 3D space using CSS transforms. After the cube structure was
+            complete, I added animation, a bouncing ball, a shadow, and a floor to make
+            the scene feel more complete and easier to understand visually.
+          </p>
+        </div>
 
-      <div class="process-visual">
-        <div class="visual-scene">
-          <div class="visual-layer visual-back"></div>
-          <div class="visual-layer visual-mid"></div>
-          <div class="visual-layer visual-front"></div>
+        <div class="process-layout">
+          <div class="process-steps">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <h3>Build Six Faces</h3>
+              <p>
+                I created six div elements to represent the front, back, left, right, top,
+                and bottom of the cube. At this stage, each part was still just a flat square.
+              </p>
+            </div>
 
-          <div class="mini-cube">
-            <div class="mini-face mini-front"></div>
-            <div class="mini-face mini-back"></div>
-            <div class="mini-face mini-left"></div>
-            <div class="mini-face mini-right"></div>
-            <div class="mini-face mini-top"></div>
-            <div class="mini-face mini-bottom"></div>
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <h3>Position Each Face</h3>
+              <p>
+                I used translateZ(), rotateX(), and rotateY() to move each face into the
+                correct position. Once all six faces were placed correctly, they visually
+                formed a complete cube.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <h3>Add Depth</h3>
+              <p>
+                I added perspective to the parent container and used preserve-3d on the
+                cube so the browser would keep all of the faces in 3D space instead of
+                flattening them.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <h3>Animate the Scene</h3>
+              <p>
+                After the cube was built, I added rotation, a bouncing ball, and a shadow.
+                These details made the scene feel more dynamic and helped demonstrate how
+                CSS can create motion as well as structure.
+              </p>
+            </div>
           </div>
-          <div class="mini-orb"></div>
 
-          <div class="process-note note-1">translateZ()</div>
-          <div class="process-note note-2">rotateY()</div>
-          <div class="process-note note-3">rotateX()</div>
+          <div class="process-visual">
+            <div class="visual-scene">
+              <div class="visual-layer visual-back"></div>
+              <div class="visual-layer visual-mid"></div>
+              <div class="visual-layer visual-front"></div>
+
+              <div class="mini-cube">
+                <div class="mini-face mini-front"></div>
+                <div class="mini-face mini-back"></div>
+                <div class="mini-face mini-left"></div>
+                <div class="mini-face mini-right"></div>
+                <div class="mini-face mini-top"></div>
+                <div class="mini-face mini-bottom"></div>
+              </div>
+              <div class="mini-orb"></div>
+
+              <div class="process-note note-1">translateZ()</div>
+              <div class="process-note note-2">rotateY()</div>
+              <div class="process-note note-3">rotateX()</div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-    </div>
+    </section>
   </div>
-</section>
-</div>
-<section class="usecase-section">
-  <div class="usecase-wrapper">
-    <span class="section-tag">USE CASES</span>
-    <h2>Real-World Applications</h2>
+  <section class="usecase-section">
+    <div class="usecase-wrapper">
+      <span class="section-tag">USE CASES</span>
+      <h2>Real-World Applications</h2>
 
-    <div class="usecase-grid">
-      <div class="usecase-card">
-        <h3>Product Displays</h3>
-        <p>
-          Online stores and product pages often use 3D tilt or layered depth to
-          make products feel more interactive and visually engaging.
-        </p>
-      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card">
+          <h3>Product Displays</h3>
+          <p>
+            Online stores and product pages often use 3D tilt or layered depth to
+            make products feel more interactive and visually engaging.
+          </p>
+        </div>
 
-      <div class="usecase-card">
-        <h3>Interactive Landing Pages</h3>
-        <p>
-          Creative landing pages use depth, glassmorphism, and 3D cards to make
-          branding feel more modern and memorable.
-        </p>
-      </div>
+        <div class="usecase-card">
+          <h3>Interactive Landing Pages</h3>
+          <p>
+            Creative landing pages use depth, glassmorphism, and 3D cards to make
+            branding feel more modern and memorable.
+          </p>
+        </div>
 
-      <div class="usecase-card">
-        <h3>User Interface Design</h3>
-        <p>
-          3D transforms can improve hierarchy by separating foreground and
-          background elements, which helps guide the user’s attention.
-        </p>
-      </div>
+        <div class="usecase-card">
+          <h3>User Interface Design</h3>
+          <p>
+            3D transforms can improve hierarchy by separating foreground and
+            background elements, which helps guide the user’s attention.
+          </p>
+        </div>
 
-      <div class="usecase-card">
-        <h3>Creative Coding</h3>
-        <p>
-          Scenes like this cube demo show how CSS can be used to build
-          experimental visuals without relying on a full 3D engine.
-        </p>
+        <div class="usecase-card">
+          <h3>Creative Coding</h3>
+          <p>
+            Scenes like this cube demo show how CSS can be used to build
+            experimental visuals without relying on a full 3D engine.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="support-section">
-  <div class="support-wrapper">
-    <span class="section-tag">SUPPORT</span>
-    <h2>Browser Support</h2>
-    <p>
-      CSS 3D transforms are supported in modern browsers such as Chrome,
-      Firefox, Safari, and Edge. In most current environments, they do not need
-      polyfills, although some visual details like blur or backdrop-filter may
-      appear slightly different depending on the browser.
-    </p>
+  <section class="support-section">
+    <div class="support-wrapper">
+      <span class="section-tag">SUPPORT</span>
+      <h2>Browser Support</h2>
+      <p>
+        CSS 3D transforms are supported in modern browsers such as Chrome,
+        Firefox, Safari, and Edge. In most current environments, they do not need
+        polyfills, although some visual details like blur or backdrop-filter may
+        appear slightly different depending on the browser.
+      </p>
 
-    <div class="support-grid">
-      <div class="support-card">
-        <h3>Modern Browsers</h3>
-        <p>Chrome, Firefox, Safari, and Edge all support CSS 3D transforms.</p>
-      </div>
+      <div class="support-grid">
+        <div class="support-card">
+          <h3>Modern Browsers</h3>
+          <p>Chrome, Firefox, Safari, and Edge all support CSS 3D transforms.</p>
+        </div>
 
-      <div class="support-card">
-        <h3>Fallbacks</h3>
-        <p>
-          If some advanced visual effects are reduced, the layout should still
-          remain readable and usable.
-        </p>
+        <div class="support-card">
+          <h3>Fallbacks</h3>
+          <p>
+            If some advanced visual effects are reduced, the layout should still
+            remain readable and usable.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="resources-section">
-  <div class="resources-wrapper">
-    <span class="section-tag">RESOURCES</span>
-    <h2>Resources and Tools</h2>
-    <ul>
-      <li>MDN Web Docs</li>
-      <li>CSS-Tricks</li>
-      <li>Kevin Powell’s CSS videos</li>
-      <li>Spline</li>
-      <li>Visual Studio Code</li>
-      <li>Animate.css</li>
-      <li>w3schools</li>
-      <li>ChatGPT</li>
-    </ul>
-  </div>
-</section>
+  <section class="resources-section">
+    <div class="resources-wrapper">
+      <span class="section-tag">RESOURCES</span>
+      <h2>Resources and Tools</h2>
+      <ul>
+        <li>MDN Web Docs</li>
+        <li>CSS-Tricks</li>
+        <li>Kevin Powell’s CSS videos</li>
+        <li>Spline</li>
+        <li>Visual Studio Code</li>
+        <li>Animate.css</li>
+        <li>w3schools</li>
+        <li>Figma</li>
+        <li>ChatGPT</li>
+      </ul>
+    </div>
+  </section>
 
-<footer class="site-footer">
-  <p>Built by Liang Yu Liu © 2026</p>
-</footer>
+  <footer class="site-footer">
+    <p>Built by Liang Yu Liu © 2026</p>
+  </footer>
 
   <script>
-const card = document.getElementById("flipCard");
-const inner = card.querySelector(".flip-card-inner");
-const logo = document.getElementById("logoArea");
+    const card = document.getElementById("flipCard");
+    const inner = card.querySelector(".flip-card-inner");
+    const logo = document.getElementById("logoArea");
 
-logo.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
+    logo.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
 
-card.addEventListener("click", () => {
-  card.classList.toggle("flipped");
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
 
-  if (card.classList.contains("flipped")) {
-    inner.style.transform = "rotateY(180deg)";
-  } else {
-    inner.style.transform = "rotateX(0deg) rotateY(0deg)";
-  }
-});
+      if (card.classList.contains("flipped")) {
+        inner.style.transform = "rotateY(180deg)";
+      } else {
+        inner.style.transform = "rotateX(0deg) rotateY(0deg)";
+      }
+    });
 
-card.addEventListener("mousemove", (e) => {
-  if (card.classList.contains("flipped")) return;
+    card.addEventListener("mousemove", (e) => {
+      if (card.classList.contains("flipped")) return;
 
-  const rect = card.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
 
-  const rotateY = (x - centerX) / 20;
-  const rotateX = -(y - centerY) / 20;
+      const rotateY = (x - centerX) / 20;
+      const rotateX = -(y - centerY) / 20;
 
-  inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-});
+      inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
 
-card.addEventListener("mouseleave", () => {
-  if (card.classList.contains("flipped")) return;
-  inner.style.transform = "rotateX(0deg) rotateY(0deg)";
-});
+    card.addEventListener("mouseleave", () => {
+      if (card.classList.contains("flipped")) return;
+      inner.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
 
-/* ===== BALL BOUNCE ===== */
+    /* ===== BALL BOUNCE ===== */
 
-const ball = document.getElementById("ball");
-const shadow = document.getElementById("ballShadow");
-const cubeScene = document.getElementById("cubeScene");
+    const ball = document.getElementById("ball");
+    const shadow = document.getElementById("ballShadow");
+    const cubeScene = document.getElementById("cubeScene");
 
-let autoBounce = true;
-let manualBounces = 0;
+    let autoBounce = true;
+    let manualBounces = 0;
 
-const ballState = {
-  amplitude: 120,
-  speed: 0.0045
-};
+    const ballState = {
+      amplitude: 120,
+      speed: 0.0045
+    };
 
-function animateBall(time) {
-  const wave = Math.abs(Math.sin(time * ballState.speed));
+    function animateBall(time) {
+      const wave = Math.abs(Math.sin(time * ballState.speed));
 
-  if (autoBounce || manualBounces > 0) {
-    const y = -(wave * ballState.amplitude);
+      if (autoBounce || manualBounces > 0) {
+        const y = -(wave * ballState.amplitude);
 
-    const impact = wave < 0.08;
-    const scaleX = impact ? 1.08 : 1;
-    const scaleY = impact ? 0.9 : 1;
+        const impact = wave < 0.08;
+        const scaleX = impact ? 1.08 : 1;
+        const scaleY = impact ? 0.9 : 1;
 
-    ball.style.transform = `translateY(${y}px) scaleX(${scaleX}) scaleY(${scaleY})`;
+        ball.style.transform = `translateY(${y}px) scaleX(${scaleX}) scaleY(${scaleY})`;
 
-    const shadowScale = 1 - wave * 0.45;
-    const shadowOpacity = 0.45 + wave * 0.2;
+        const shadowScale = 1 - wave * 0.45;
+        const shadowOpacity = 0.45 + wave * 0.2;
 
-    shadow.style.transform = `scale(${shadowScale})`;
-    shadow.style.opacity = shadowOpacity;
-  }
+        shadow.style.transform = `scale(${shadowScale})`;
+        shadow.style.opacity = shadowOpacity;
+      }
 
-  requestAnimationFrame(animateBall);
-}
-
-ball.addEventListener("click", (e) => {
-  e.stopPropagation();
-
-  autoBounce = false;
-  manualBounces += 1;
-
-  setTimeout(() => {
-    manualBounces = Math.max(0, manualBounces - 1);
-    if (manualBounces === 0) {
-      autoBounce = true;
+      requestAnimationFrame(animateBall);
     }
-  }, 1800);
-});
 
-cubeScene.addEventListener("mousemove", (e) => {
-  const rect = cubeScene.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const normalized = x / rect.width;
+    ball.addEventListener("click", (e) => {
+      e.stopPropagation();
 
-  ballState.amplitude = 70 + normalized * 140;
-});
+      autoBounce = false;
+      manualBounces += 1;
 
-requestAnimationFrame(animateBall);
-</script>
+      setTimeout(() => {
+        manualBounces = Math.max(0, manualBounces - 1);
+        if (manualBounces === 0) {
+          autoBounce = true;
+        }
+      }, 1800);
+    });
+
+    cubeScene.addEventListener("mousemove", (e) => {
+      const rect = cubeScene.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const normalized = x / rect.width;
+
+      ballState.amplitude = 70 + normalized * 140;
+    });
+
+    requestAnimationFrame(animateBall);
+  </script>
 </body>
+
 </html>
