@@ -10,6 +10,13 @@
     justify-content: center;
 }
 
+.picture-placeholder picture,
+.picture-placeholder img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
 /* Background Demos Container */
 .bg-contain-demo,
 .bg-cover-demo {
@@ -17,13 +24,9 @@
     border: 3px solid #698b9c;
     border-radius: 12px;
     position: relative;
-    /* TODO: Students add background properties here
-     * Example structure:
-     * background-image: url('../images/your-image.jpg');
-     * background-position: center;
-     * background-repeat: no-repeat;
-     * background-size: contain; (or cover)
-     */
+    background-image: url('../images/bg-small.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Image-Set Demo Container */
@@ -33,17 +36,14 @@
     border: 3px solid #9B59B6;
     border-radius: 12px;
     position: relative;
-    /* TODO: Students add image-set() here
-     * Example structure:
-     * background-image: image-set(
-     *   url('../images/your-1x.jpg') 1x,
-     *   url('../images/your-2x.jpg') 2x,
-     *   url('../images/your-3x.jpg') 3x
-     * );
-     * background-position: center;
-     * background-repeat: no-repeat;
-     * background-size: cover;
-     */
+    background-image: image-set(
+        url('../images/pattern-1x.jpg') 1x,
+        url('../images/pattern-2x.jpg') 2x,
+        url('../images/pattern-3x.jpg') 3x
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Demo Labels */
@@ -66,36 +66,24 @@
    STUDENT WORK AREA - MEDIA QUERIES
    ============================================ */
 
-/* TODO: Add media queries for Exercise 1 (Picture Element)
- * The picture element in the HTML will handle image switching,
- * but you may want to add responsive styles for the aside container.
- */
+.bg-contain-demo {
+    background-size: contain;
+}
 
-/* TODO: Add media queries for Exercise 2 (Background Images)
- * Example structure:
- * 
- * Mobile (default): bg-small.jpg
- * @media (min-width: 700px) {
- *   .bg-contain-demo, .bg-cover-demo {
- *     background-image: url('../images/bg-medium.jpg');
- *   }
- * }
- * 
- * @media (min-width: 1000px) {
- *   .bg-contain-demo, .bg-cover-demo {
- *     background-image: url('../images/bg-large.jpg');
- *   }
- * }
- */
+.bg-cover-demo {
+    background-size: cover;
+}
 
-/* TODO: Set background-size for contain demo */
-/* .bg-contain-demo {
- *   background-size: contain;
- * }
- */
+@media (min-width: 700px) {
+    .bg-contain-demo,
+    .bg-cover-demo {
+        background-image: url('../images/bg-medium.jpg');
+    }
+}
 
-/* TODO: Set background-size for cover demo */
-/* .bg-cover-demo {
- *   background-size: cover;
- * }
- */
+@media (min-width: 1000px) {
+    .bg-contain-demo,
+    .bg-cover-demo {
+        background-image: url('../images/bg-large.jpg');
+    }
+}
