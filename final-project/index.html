@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App Landing Page</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appline App Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <header class="hero">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="logo">appli<span>ne</span></a>
 
- <header class="hero">
-  <nav class="navbar">
-    <div class="container nav-inner">
-      <div class="logo">appli<span>ne</span></div>
-
-      <ul class="nav-links">
-        <li>Home</li>
-        <li>Features</li>
-        <li>How It Works</li>
-        <li>Pricing</li>
-        <li>Review</li>
-      </ul>
-    </div>
-  </nav>
+        <ul class="nav-links">
+          <li>Home</li>
+          <li>Features</li>
+          <li>How It Works</li>
+          <li>Pricing</li>
+          <li>Review</li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="container hero-content">
       <div class="hero-text">
         <p class="subtitle">Jubule 12.8</p>
-        <h1>Awesome App for <br />Your Modern <span>Lifestyle</span></h1>
+        <h1>Awesome App for <br>Your Modern <span>Lifestyle</span></h1>
         <p>
           Lorem ipsum is simply dummy text of the printing and typesetting industry.
           Lorem ipsum has been the industry’s standard.
         </p>
+
         <div class="hero-buttons">
           <a class="btn btn-light">Download App</a>
           <a class="btn btn-light">Discover More</a>
@@ -38,212 +44,241 @@
       </div>
 
       <div class="hero-image">
-        <img src="final-project-images/hero-img.png" alt="App mockup" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="final-project-images/hero-img.png">
+          <img src="final-project-images/hero-img.png" alt="App mockup on a phone">
+        </picture>
       </div>
     </div>
   </header>
 
-  <section class="features section">
-    <div class="container center-text">
-      <h2>Awesome Apps Features</h2>
-      <p class="section-text">
-        Lorem ipsum is simply dummy text of the printing and typesetting industry.
-      </p>
+  <main>
+    <section id="features" class="features section">
+      <div class="container center-text">
+        <h2>Awesome Apps Features</h2>
+        <p class="section-text">
+          Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+        </p>
 
-      <div class="feature-cards">
-        <div class="f-card">
-          
-          <img src="final-project-images/features-icon-1.png" alt="Feature icon" />
-          <h3>Design & Branding</h3>
-          
-          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        <div class="feature-cards">
+          <article class="f-card">
+            <img src="final-project-images/features-icon-1.png" alt="">
+            <h3>Design & Branding</h3>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+          </article>
+
+          <article class="f-card">
+            <img src="final-project-images/features-icon-2.png" alt="">
+            <h3>Fully Secured</h3>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+          </article>
+
+          <article class="f-card">
+            <img src="final-project-images/features-icon-3.png" alt="">
+            <h3>Easy to Edit</h3>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+          </article>
         </div>
-        <div class="f-card">
-          <img src="final-project-images/features-icon-2.png" alt="Feature icon" />
-          <h3>Fully Secured</h3>
-          
-          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="app-work-section section">
+      <div class="container app-work-inner">
+        <div class="work-left">
+          <h2>How does this App Work?</h2>
+
+          <div class="work-step">
+            <img src="final-project-images/image (4).svg" alt="">
+            <div>
+              <h3>Make a Profile</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            </div>
+          </div>
+
+          <div class="work-step">
+            <img src="final-project-images/image (5).svg" alt="">
+            <div>
+              <h3>Download it for free</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            </div>
+          </div>
+
+          <div class="work-step">
+            <img src="final-project-images/image (6).svg" alt="">
+            <div>
+              <h3>Enjoy this App</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            </div>
+          </div>
+
+          <div class="store-buttons">
+            <a href="#">
+              <img src="final-project-images/app-store-img.png" alt="Download on the App Store">
+            </a>
+            <a href="#">
+              <img src="final-project-images/google-play-img.png" alt="Get it on Google Play">
+            </a>
+          </div>
         </div>
-        <div class="f-card">          
-          <img src="final-project-images/features-icon-3.png" alt="Feature icon" />
-          <h3>Easy to Edit</h3>
 
-          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        <div class="work-right">
+          <img class="circle-bg" src="final-project-images/app-work-bg.png" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="final-project-images/app-work-img-2.png">
+            <img class="phone-img" src="final-project-images/app-work-img-2.png" alt="App work screen preview">
+          </picture>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="app-work-section">
-  <div class="work-left">
-    <h2>How does this App Work?</h2>
+    <section class="manage-section section">
+      <div class="container manage-inner">
+        <div class="manage-phone">
+          <img class="manage-bg" src="final-project-images/app-work-bg.png" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="final-project-images/easy-to-manage-img-2.png">
+            <img class="manage-img" src="final-project-images/easy-to-manage-img-2.png" alt="App data management screen">
+          </picture>
+        </div>
 
-    <div class="work-step">
-      <img src="final-project-images/image (4).svg" alt="How it works step 1">
-      <div>
-        <h3>Make a Profile</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+        <div class="manage-text">
+          <img class="manage-icon" src="final-project-images/easy-to-manage-icon.png" alt="">
+          <h2>Easy to Manage Your All Data by This App</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <a class="read-btn">Read More</a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="work-step">
-      <img src="final-project-images/image (5).svg" alt="How it works step 2">
-      <div>
-        <h3>Download it for free</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+    <section class="responsive-section section">
+      <div class="container responsive-inner">
+        <div class="responsive-text">
+          <h2>Responsive Design for All Devices with Quality</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <a class="read-btn">Read More</a>
+        </div>
+
+        <div class="responsive-phone">
+          <img class="responsive-bg" src="final-project-images/app-work-bg.png" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="final-project-images/responsive-design-img-2.png">
+            <img class="responsive-img" src="final-project-images/responsive-design-img-2.png" alt="Responsive app screen preview">
+          </picture>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="work-step">
-      <img src="final-project-images/image (6).svg" alt="How it works step 3">
-      <div>
-        <h3>Enjoy this App</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <section class="video-section">
+      <picture>
+        <source media="(min-width: 768px)" srcset="final-project-images/watch-tutorial-img.jpg">
+        <img src="final-project-images/watch-tutorial-img.jpg" alt="Person using an app on a phone">
+      </picture>
+
+      <div class="overlay">
+        <h2>Watch a Quick Tutorial</h2>
+        <button class="play-btn" type="button" aria-label="Play tutorial">▶</button>
       </div>
-    </div>
+    </section>
 
-    <div class="store-buttons">
-      <img src="final-project-images/app-store-img.png" alt="App Store">
-      <img src="final-project-images/google-play-img.png" alt="Google Play">
-    </div>
-  </div>
+    <section id="pricing" class="pricing-section section">
+      <div class="container center-text">
+        <h2>Choose your plan</h2>
 
-  <div class="work-right">
-    <img class="circle-bg" src="final-project-images/app-work-bg.png" alt="">
-    <img class="phone-img" src="final-project-images/app-work-img-2.png" alt="">
-  </div>
-</section>
+        <div class="pricing-cards">
+          <article class="price-card">
+            <p class="plan">STARTER</p>
+            <h3>Free</h3>
+            <p class="sub">Per Month, Billed Annually</p>
 
-  <section class="manage-section">
-  <div class="manage-phone">
-    <img class="manage-bg" src="final-project-images/app-work-bg.png" alt="">
-    <img class="manage-img" src="final-project-images/easy-to-manage-img-2.png" alt="app screen">
-  </div>
+            <ul>
+              <li class="active">Access Free Courses</li>
+              <li class="active">Download Up To 5 Courses</li>
+              <li class="disabled">Get Teacher’s Feedback</li>
+              <li class="disabled">Write Reviews</li>
+              <li class="disabled">24/7 Customer Support</li>
+            </ul>
 
-  <div class="manage-text">
-    <img class="manage-icon" src="final-project-images/easy-to-manage-icon.png" alt="">
-    <h2>Easy to Manage Your All<br>Data by This App</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the
-      printing and typesetting industry.
-    </p>
-    <a class="read-btn">Read More</a>
-  </div>
-</section>
+            <a class="start-btn">Start Now</a>
+          </article>
 
-<section class="responsive-section">
-  <div class="responsive-inner">
+          <article class="price-card">
+            <p class="plan">PREMIUM</p>
+            <h3>$2.00</h3>
+            <p class="sub">Per Month, Billed Annually</p>
 
-    <div class="responsive-text">
-      <h2>Responsive Design for<br>All Devices with Quality</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry’s standard dummy text.
-      </p>
-      <a href="#" class="read-btn">Read More</a>
-    </div>
+            <ul>
+              <li class="active">Access Free Courses</li>
+              <li class="active">Download Up To 5 Courses</li>
+              <li class="active">Get Teacher’s Feedback</li>
+              <li class="disabled">Write Reviews</li>
+              <li class="disabled">24/7 Customer Support</li>
+            </ul>
 
-    <div class="responsive-phone">
-      <img class="responsive-bg" src="final-project-images/app-work-bg.png" alt="">
-      <img class="responsive-img" src="final-project-images/responsive-design-img-2.png" alt="">
-    </div>
+            <a class="start-btn">Start Now</a>
+          </article>
 
-  </div>
-</section>
+          <article class="price-card">
+            <p class="plan">PRO</p>
+            <h3>$7.00</h3>
+            <p class="sub">Per Month, Billed Annually</p>
 
- <section class="video-section">
-  <div class="overlay">
-    <h2>Watch a Quick Tutorial</h2>
-    <div class="play-btn">▶</div>
-  </div>
-</section>
+            <ul>
+              <li class="active">Access Free Courses</li>
+              <li class="active">Download Up To 5 Courses</li>
+              <li class="active">Get Teacher’s Feedback</li>
+              <li class="active">Write Reviews</li>
+              <li class="active">24/7 Customer Support</li>
+            </ul>
 
-  <section class="pricing-section">
-  <h2>Choose your plan</h2>
+            <a class="start-btn">Start Now</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div class="pricing-cards">
+    <section id="review" class="review-section section">
+      <div class="container center-text">
+        <h2>User Review</h2>
 
-    <div class="card">
-      <p class="plan">STARTER</p>
-      <h3>Free</h3>
-      <p class="sub">Per Month, Billed Annually</p>
+        <div class="review-box">
+          <picture>
+            <source media="(min-width: 768px)" srcset="final-project-images/review-img.png">
+            <img src="final-project-images/review-img.png" alt="Review user portrait" class="review-img">
+          </picture>
 
-      <ul>
-        <li class="active">✔ Access Free Courses</li>
-        <li class="active">✔ Download Up To 5 Courses</li>
-        <li class="disabled">✔ Get Teacher’s Feedback</li>
-        <li class="disabled">✔ Write Reviews</li>
-        <li class="disabled">✔ 24/7 Customer Support</li>
-      </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+            gravida. Risus commodo viverra.
+          </p>
 
-      <a class="start-btn">Start Now</a>
-    </div>
-
-    <div class="card">
-      <p class="plan">PREMIUM</p>
-      <h3>$2.00</h3>
-      <p class="sub">Per Month, Billed Annually</p>
-
-      <ul>
-        <li class="active">✔ Access Free Courses</li>
-        <li class="active">✔ Download Up To 5 Courses</li>
-        <li class="active">✔ Get Teacher’s Feedback</li>
-        <li class="disabled">✔ Write Reviews</li>
-        <li class="disabled">✔ 24/7 Customer Support</li>
-      </ul>
-
-      <a class="start-btn">Start Now</a>
-    </div>
-
-    <div class="card">
-      <p class="plan">PRO</p>
-      <h3>$7.00</h3>
-      <p class="sub">Per Month, Billed Annually</p>
-
-      <ul>
-        <li class="active">✔ Access Free Courses</li>
-        <li class="active">✔ Download Up To 5 Courses</li>
-        <li class="active">✔ Get Teacher’s Feedback</li>
-        <li class="active">✔ Write Reviews</li>
-        <li class="active">✔ 24/7 Customer Support</li>
-      </ul>
-
-      <a class="start-btn">Start Now</a>
-    </div>
-
-  </div>
-</section>
-
-  <section class="review-section">
-  <h2>User Review</h2>
-
-  <div class="review-box">
-    <img src="final-project-images/review-img.png" alt="review user" class="review-img">
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-      gravida. Risus commodo viverra.
-    </p>
-
-    <h4>– Michel Strac</h4>
-  </div>
-</section>
+          <h3>– Michel Strac</h3>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer-section">
-  <h2>Let’s start using today</h2>
+    <div class="container center-text">
+      <h2>Let’s start using today</h2>
 
-  <div class="footer-buttons">
-    <img src="final-project-images/app-store-img-footer.png" alt="App Store">
-    <img src="final-project-images/google-play-img-footer.png" alt="Google Play">
-  </div>
+      <div class="footer-buttons">
+          <img src="final-project-images/app-store-img-footer.png" alt="Download on the App Store">
+          <img src="final-project-images/google-play-img-footer.png" alt="Get it on Google Play">
+      </div>
 
-  <p>
-    Copyright © 2020 Artbees Ltd. JupiterX Lite WordPress Theme Demo<br>
-    All rights reserved.
-  </p>
-</footer>
-
+      <p>
+        Copyright © 2020 Artbees Ltd. JupiterX Lite WordPress Theme Demo<br>
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
