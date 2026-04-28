@@ -146,7 +146,6 @@ ul {
   width: min(78vw, 21rem);
 }
 
-/* Features */
 .features h2,
 .pricing-section h2,
 .review-section h2 {
@@ -350,7 +349,6 @@ ul {
   cursor: pointer;
 }
 
-/* Pricing */
 .pricing-section {
   padding: 5rem 0;
 }
